@@ -11,4 +11,7 @@ alias zsh-reload="source ~/.zshrc"
 # Config
 alias zsh-aliases="nvim $ZSH_CUSTOM/aliases.zsh"
 alias zsh-path="nvim $ZSH_CUSTOM/path.zsh"
+
+# Dotfiles
 alias config='/usr/bin/git --git-dir=/home/jonathan/.cfg/ --work-tree=/home/jonathan'
+alias config-update='config add -u && config commit && config pull && config pull'
