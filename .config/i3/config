@@ -225,10 +225,10 @@ bindsym $super+l exec --no-startup-id loginctl lock-session
 exec firefox
 exec_always --no-startup-id xrandr --output HDMI-0 --off --output DP-0 --primary --mode 2560x1440 --pos 0x0 --rotate normal --output DP-1 --off --output DP-2 --off --output DP-3 --off --output HDMI-1 --off
 
-exec_always --no-startup-id feh --no-fehbg --bg-scale '/home/jonathan/Documents/background.jpg'
+exec_always --no-startup-id feh --no-fehbg --bg-scale '/home/jonathan/Documents/background.png'
 
 exec discord
 
 assign [class="discord"] $ws3
 
-exec i3lock --nofork --line-color='#00000000' --separator-color='#00000000' --clock --insidewrong-color='#00000000' --insidever-color='#00000000' --inside-color='#00000000' -i /home/jonathan/Documents/background-lock-res.png --indicator
+exec i3lock --nofork --line-color='#00000000' --separator-color='#00000000' --clock --insidewrong-color='#00000000' --insidever-color='#00000000' --inside-color='#00000000' -i /home/jonathan/Documents/background-lock.png --indicator
