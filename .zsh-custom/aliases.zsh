@@ -11,6 +11,7 @@ alias zsh-reload="source ~/.zshrc"
 # Config
 alias zsh-aliases="nvim $ZSH_CUSTOM/aliases.zsh"
 alias zsh-vars="nvim $ZSH_CUSTOM/vars.zsh"
+alias zsh-color="nvim $ZSH_CUSTOM/colors.zsh"
 alias i3-config="nvim ~/.config/i3/config"
 
 # Dotfiles
