@@ -12,7 +12,7 @@ alias zsh-reload="source ~/.zshrc"
 alias zsh-aliases="nvim $ZSH_CUSTOM/aliases.zsh"
 alias zsh-vars="nvim $ZSH_CUSTOM/vars.zsh"
 alias zsh-color="nvim $ZSH_CUSTOM/colors.zsh"
-alias i3-config="nvim ~/.config/i3/config"
+alias i3-config="nvim ~/.config/i3/config.d/"
 
 # Dotfiles
 alias config='/usr/bin/git --git-dir=/home/jonathan/.cfg/ --work-tree=/home/jonathan'
