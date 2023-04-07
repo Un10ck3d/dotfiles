@@ -39,7 +39,7 @@ exec --no-startup-id dex --autostart --environment i3
 # screen before suspend. Use loginctl lock-session to lock your screen.
 
 exec --no-startup-id xset 180 120
-exec_always --no-startup-id xss-lock -n dim-screen.sh -- i3lock --nofork --line-color='#00000000' --separator-color='#00000000' --clock --insidewrong-color='#00000000' --insidever-color='#00000000' --inside-color='#00000000' -i /home/jonathan/Documents/background-lock-multimonitor.png --indicator
+exec_always --no-startup-id /bin/bash $HOME/.config/i3/xss.sh
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -146,7 +146,7 @@ bindsym $mod+a focus parent
 
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
-bindsym $mod+Shift+$super+e exec "/usr/bin/systemctl poweroff"
+bindsym $mod+Shift+$super+e exec "/bin/python $HOME/Code/off.py && /usr/bin/systemctl poweroff"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -165,6 +165,8 @@ mode "resize" {
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
         bindsym Down resize grow height 10 px or 10 ppt
+
+
         bindsym Up resize shrink height 10 px or 10 ppt
         bindsym Right resize grow width 10 px or 10 ppt
 
@@ -184,7 +186,7 @@ exec_always --no-startup-id xrandr --output HDMI-0 --mode 2560x1440 --pos 0x0 --
 
 exec_always --no-startup-id feh --bg-fill '/home/jonathan/Documents/background.png' --bg-fill '/home/jonathan/Documents/background-vertical.png'
 
-exec --no-startup-id i3lock --nofork --line-color='#00000000' --separator-color='#00000000' --clock --insidewrong-color='#00000000' --insidever-color='#00000000' --inside-color='#00000000' -i /home/jonathan/Documents/background-lock-multimonitor.png --indicator
+exec --no-startup-id /bin/bash $HOME/.config/i3/lock.sh
 
 
 # Define names for default workspaces for which we configure key bindings later on.
