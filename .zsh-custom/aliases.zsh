@@ -14,6 +14,11 @@ alias zsh-vars="nvim $ZSH_CUSTOM/vars.zsh"
 alias zsh-color="nvim $ZSH_CUSTOM/colors.zsh"
 alias i3-config="nvim ~/.config/i3/config.d/"
 
+# Pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
 # Dotfiles
 alias config='/usr/bin/git --git-dir=/home/jonathan/.cfg/ --work-tree=/home/jonathan'
 alias config-update='config add -u && config commit && config pull && config push'
