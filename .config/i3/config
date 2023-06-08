@@ -182,7 +182,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available
 
 bindsym $super+l exec --no-startup-id loginctl lock-session
-exec_always --no-startup-id xrandr --output HDMI-0 --mode 2560x1440 --pos 0x0 --rotate left --output DP-0 --primary --mode 2560x1440 --pos 1440x712 --rotate normal --output DP-1 --off --output DP-2 --off --output DP-3 --off --output HDMI-1 --off
+exec_always --no-startup-id xrandr --output DisplayPort-0 --mode 2560x1440 --pos 1440x634 --rotate normal --output DisplayPort-1 --off --output DisplayPort-2 --off --output HDMI-A-0 --mode 2560x1440 --pos 0x0 --rotate left
 
 exec_always --no-startup-id feh --bg-fill '/home/jonathan/Documents/background.png' --bg-fill '/home/jonathan/Documents/background-vertical.png'
 
